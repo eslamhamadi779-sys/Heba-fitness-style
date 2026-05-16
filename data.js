@@ -12,7 +12,7 @@ const hebaData = {
         {name: "تأمل", desc: "تهدئة العقل والتخلص من الأفكار السلبية في 10 دقايق يومياً"},
         {name: "مرونة", desc: "تمارين إطالة بتزيد مرونة العمود الفقري والمفاصل"},
         {name: "آلام أسفل الظهر", desc: "وضعيات يوجا مخصصة لتخفيف الضغط على أسفل الظهر"}
-    ]
+    ],
 
     socialLinks: {
         instagram: "https://www.instagram.com/heba.fitness22",
@@ -21,9 +21,9 @@ const hebaData = {
         tiktok1: "https://www.tiktok.com/@heba.fitness22",
         tiktok2: "https://www.tiktok.com/@heba.fitness2",
         email: "mailto:Hebayoga7@gmail.com",
-        youtube: "https://youtu.be/8jFUB-zoUWk?si=-ExPzsaada9wNUh2",
-}
-            
+        youtube: "https://youtu.be/8jFUB-zoUWk?si=-ExPzsaada9wNUh2"
+    }, // ← فاصلة واحدة هنا وبس
+
     // ── خطط حاسبة BMI ──
     gain: {
         diet: "نظام زيادة وزن: زود 500 سعرة عن احتياجك، ركز على البروتين والكارب الصحي زي الرز والمكرونة والبطاطا.",
@@ -40,4 +40,4 @@ const hebaData = {
         exercise: "كارديو HIIT + مقاومة 4-5 أيام في الأسبوع.",
         tip: "اشرب ماية كتير، العطش بيخليك تفتكر نفسك جعان 💧"
     }
-}
+} // ← قوس واحد في الآخر وبس
