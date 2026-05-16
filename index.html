@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صحتك بالدنيا ✨ | مع كابتن هبه</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- خلفية -->
+<div class="cosmic-bg">
+    <div class="stars-layer" id="starsLayer"></div>
+    <div class="zodiac-wheel-container">
+        <div class="zodiac-wheel" id="zodiacWheel">
+            <div class="wheel-inner">
+                <div class="wheel-symbol" style="--i:0">🏃‍♀️</div>
+                <div class="wheel-symbol" style="--i:1">💪</div>
+                <div class="wheel-symbol" style="--i:2">🧘‍♀️</div>
+                <div class="wheel-symbol" style="--i:3">🥗</div>
+                <div class="wheel-symbol" style="--i:4">💅</div>
+                <div class="wheel-symbol" style="--i:5">👯‍♀️</div>
+                <div class="wheel-symbol" style="--i:6">🔥</div>
+                <div class="wheel-symbol" style="--i:7">🏃‍♂️</div>
+                <div class="wheel-symbol" style="--i:8">✌️</div>
+                <div class="wheel-symbol" style="--i:9">💥</div>
+                <div class="wheel-symbol" style="--i:10">🚴‍♀️</div>
+                <div class="wheel-symbol" style="--i:11">❤️‍🔥</div>
+            </div>
+            <div class="wheel-rings">
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="nebula nebula-1"></div>
+    <div class="nebula nebula-2"></div>
+    <div class="nebula nebula-3"></div>
+</div>
+ 
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo"><i class="fas fa-heart"></i> Heba Fit</div>
+    <div class="nav-links">
+        <a href="#home">الرئيسية</a>
+        <a href="#about">من نحن</a>
+        <a href="#programs">البرامج</a>
+        <a href="#contact">اتصل بنا</a>
+    </div>
+</nav>
+ 
+<!-- Sidebar -->
+<aside class="sidebar">
+    <div class="profile-avatar">
+        <img src="https://placehold.co/80x80/ff69b4/ffffff?text=HF" alt="profile">
+        <div class="online-status"></div>
+    </div>
+</aside>
+ 
+<!-- Header -->
+<header id="home">
+    <div class="header-content fade-in">
+        <div class="header-icon">✨</div>
+        <h1>حياتك الأفضل تبدأ الآن</h1>
+        <p>أنتِ قد التحدي — هتخسي من غير ما تحسي 💖</p>
+    </div>
+</header>
+ 
+<!-- الأقسام -->
+<section id="dietSection">
+    <h2>نظام غذائي</h2>
+    <p id="dietText"></p>
+</section>
+
+<section id="yogaSection">
+    <h2>يوجا</h2>
+    <p id="yogaText"></p>
+    <div id="yogaList"></div>
+</section>
+
+<section id="morningSection">
+    <h2>تمارين صباحية</h2>
+    <p id="morningText"></p>
+</section>
+
+<section id="fatBurnSection">
+    <h2>حرق دهون</h2>
+    <p id="fatBurnText"></p>
+</section>
+ 
+<!-- Programs -->
+<section id="programs" class="fade-in">
+    <h2>برامجنا</h2>
+    <div class="programs-grid">
+        <div class="program-card" onclick="goToSection('dietSection')">🥗<br>نظام غذائي</div>
+        <div class="program-card" onclick="goToSection('yogaSection')">🧘‍♀️<br>يوجا</div>
+        <div class="program-card" onclick="goToSection('morningSection')">💪<br>تمارين صباحية</div>
+        <div class="program-card" onclick="goToSection('fatBurnSection')">🔥<br>حرق دهون</div>
+    </div>
+</section>
+ 
+<!-- حاسبة الوزن -->
+<section>
+   <div class="calculator">
+    <h1>حاسبة الوزن المثالي 💪</h1>
+    <input type="number" id="weight" placeholder="اكتب وزنك بالكيلو">
+    <input type="number" id="height" placeholder="اكتب طولك بالسم">
+    <button id="calcBtn">احسب</button>
+    <div id="result"></div>
+  </div>
+</section>
+ 
+<!-- سوشيال -->
+<section id="social" class="social-links">
+    <h2>تابعي كابتن هبه</h2>
+    <div class="links">
+        <a href="" id="instagramLink" target="_blank">📷 انستجرام</a>
+        <a href="" id="facebookLink" target="_blank">📘 فيسبوك</a>
+        <a href="" id="telegramLink" target="_blank">✈️ تيليجرام</a>
+        <a href="" id="tiktok1Link" target="_blank">🎵 تيك توك 1</a>
+        <a href="" id="tiktok2Link" target="_blank">🎵 تيك توك 2</a>
+        <a href="" id="emailLink">📧 تواصلي معايا</a>
+    </div>
+</section>
+    
+<!-- Contact -->
+<section id="contact" class="fade-in">
+    <h2>اتصل بنا</h2>
+    <p>للتواصل والاستفسار عن البرامج الغذائية والرياضية</p>
+    <a href="https://wa.me/201033080125" target="_blank" class="whatsapp-btn">
+        💬 تواصل على واتساب
+    </a>
+</section>
+ 
+<!-- Footer -->
+<footer>
+    <p>© 2026 جميع الحقوق محفوظة | إسلام الهاشمي</p>
+    <p class="footer-sub">✨ موقع صحتك بالدنيا | مع كابتن هبه عصام 🌟</p>
+</footer>
+
+<!-- ربط الملفات - الترتيب مهم -->
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
