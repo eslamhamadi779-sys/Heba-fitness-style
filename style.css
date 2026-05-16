@@ -162,42 +162,6 @@ body {
     color:#ff69b4; 
 }
 
-/* ── Sidebar ── */
-.sidebar { 
-    position:fixed; 
-    top:100px; 
-    left:20px; 
-    z-index:100; 
-}
-.profile-avatar { 
-    position:relative; 
-    width:70px; 
-    height:70px; 
-}
-.profile-avatar img {
-    width:100%; 
-    height:100%; 
-    border-radius:50%; 
-    object-fit:cover;
-    border:3px solid rgba(255,105,180,0.5);
-}
-.online-status {
-    position:absolute; 
-    bottom:5px; 
-    right:5px;
-    width:15px; 
-    height:15px; 
-    background:#00ff88;
-    border-radius:50%; 
-    border:2px solid #0a0a23;
-    animation:pulse 2s infinite;
-}
-@keyframes pulse {
-    0%   { box-shadow:0 0 0 0   rgba(0,255,136,.7); }
-    70%  { box-shadow:0 0 0 10px rgba(0,255,136,0);  }
-    100% { box-shadow:0 0 0 0   rgba(0,255,136,0);   }
-}
-
 /* ── Header ── */
 header {
     min-height:100vh; 
@@ -240,7 +204,6 @@ header {
     opacity:.9; 
 }
 
-
 /* ── Sections ── */
 section {
     padding:80px 20px; 
@@ -248,9 +211,8 @@ section {
     margin:0 auto; 
     text-align:center;
     position:relative; 
-    z-index: 5; /* ده المهم عشان يطلع فوق العجلة */
+    z-index: 5;
     margin-top: 60px;
-    /* شيلنا background و backdrop-filter و border */
 }
 
 section h1, section h2 {
@@ -260,7 +222,7 @@ section h1, section h2 {
     -webkit-background-clip:text; 
     -webkit-text-fill-color:transparent;
     background-clip:text;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.5); /* ظل خفيف عشان الكلام يبان على الخلفية */
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
 section p {
@@ -270,7 +232,7 @@ section p {
     opacity: 1; 
     line-height:1.8;
     color: #fff; 
-    text-shadow: 0 2px 8px rgba(0,0,0,0.6); /* ظل خفيف عشان القراءة تبقى أوضح */
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 /* ── Cards ── */
@@ -290,21 +252,6 @@ section p {
     border:1px solid rgba(255,255,255,0.2);
     transition:all .3s; 
     cursor:pointer;
-    position:relative; 
-    overflow:hidden;
-}
-.program-card::before {
-    content:''; 
-    position:absolute;
-    top:0; 
-    left:-100%; 
-    width:100%; 
-    height:100%;
-    background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);
-    transition:left .5s;
-}
-.program-card:hover::before { 
-    left:100%; 
 }
 .program-card:hover {
     transform:translateY(-15px) scale(1.05);
@@ -326,10 +273,6 @@ section p {
     transition:all .3s;
     box-shadow:0 8px 25px rgba(37,211,102,.4);
 }
-.whatsapp-btn:hover {
-    transform:translateY(-3px);
-    box-shadow:0 12px 35px rgba(37,211,102,.5);
-}
 
 /* ── Footer ── */
 footer {
@@ -337,53 +280,6 @@ footer {
     padding:40px 20px;
     text-align:center;
     border-top:1px solid rgba(255,255,255,.1);
-}
-.footer-sub { 
-    margin-top:10px; 
-    opacity:.8; 
-    font-size:.9rem; 
-}
-
-/* ── Animations entrance ── */
-.fade-in {
-    opacity:0; 
-    transform:translateY(40px);
-    transition:all .8s cubic-bezier(.25,.46,.45,.94);
-}
-.fade-in.visible { 
-    opacity:1; 
-    transform:translateY(0); 
-}
-
-/* ── Cursor ── */
-.cursor {
-    position:fixed; 
-    width:20px; 
-    height:20px;
-    background:rgba(255,105,180,.6); 
-    border-radius:50%;
-    pointer-events:none; 
-    z-index:9999;
-    transition:left .05s, top .05s;
-}
-
-/* ── Notification ── */
-.notification {
-    position:fixed; 
-    top:100px; 
-    right:20px;
-    background:rgba(255,105,180,.95); 
-    color:#fff;
-    padding:15px 25px; 
-    border-radius:25px; 
-    font-weight:600;
-    box-shadow:0 10px 30px rgba(255,105,180,.4);
-    transform:translateX(400px); 
-    transition:all .4s;
-    z-index:1000;
-}
-.notification.show { 
-    transform:translateX(0); 
 }
 
 /* ── مواقع التواصل الاجتماعي── */
@@ -407,7 +303,6 @@ footer {
     text-decoration: none;
     transition: 0.3s;
     font-size: 16px;
-    font-family: 'Cairo', sans-serif;
 }
 .links a:hover {
     background: #ff69b4;
@@ -449,7 +344,6 @@ input{
     border-radius: 12px;
     font-size: 18px;
     outline: none;
-    box-sizing: border-box;
 }
 
 button{
@@ -477,36 +371,6 @@ button:hover{
     font-weight: bold;
     padding: 15px;
     border-radius: 12px;
-    transition: 0.3s;
-}
-
-/* ── Responsive ── */
-@media(max-width:768px){
-    .navbar { 
-        flex-direction:column; 
-        gap:10px; 
-        padding:15px; 
-        top:10px; 
-        right:10px; 
-    }
-    .sidebar { 
-        display:none; 
-    }
-    .zodiac-wheel-container { 
-        width:200px; 
-        height:200px; 
-    }
-    .wheel-symbol { 
-        font-size:16px; 
-    }
-}
-@media(max-width:480px){
-    .header-content h1 { 
-        font-size:2rem; 
-    }
-    .header-content p  { 
-        font-size:1.1rem; 
-    }
 }
 
 /* ── نتيجة حاسبة الـ BMI ── */
@@ -518,33 +382,4 @@ button:hover{
     margin-top: 20px;
     text-align: right;
     border: 1px solid rgba(255,105,180,0.3);
-    animation: fadeInUp 0.6s ease-out;
-}
-
-
-.bmi-result h2 {
-    color: #ff69b4;
-    margin-bottom: 15px;
-    font-size: 2rem;
-}
-
-.bmi-result p {
-    margin: 12px 0;
-    line-height: 1.8;
-    font-size: 16px;
-}
-
-.bmi-result strong {
-    color: #4ecdc4;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
