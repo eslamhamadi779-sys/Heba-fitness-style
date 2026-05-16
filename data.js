@@ -15,12 +15,15 @@ const hebaData = {
     ],
 
     socialLinks: {
-        instagram: "https://www.instagram.com/heba.fitness22",
-        facebook: "https://www.facebook.com/share/17QGGPb8pQ/",
-        telegram: "https://t.me/heba.fitness22",
-        tiktok1: "https://www.tiktok.com/@heba.fitness22",
-        tiktok2: "https://www.tiktok.com/@heba.fitness2",
-        email: "mailto:Hebayoga7@gmail.com"
+     
+    instagram: "https://www.instagram.com/heba.fitness22",
+    facebook: "https://www.facebook.com/share/17QGGPb8pQ/",
+    telegram: "https://t.me/heba.fitness22",
+    tiktok1: "https://www.tiktok.com/@heba.fitness22",
+    tiktok2: "https://www.tiktok.com/@heba.fitness2",
+    email: "mailto:Hebayoga7@gmail.com",
+    youtube: "https://youtu.be/8jFUB-zoUWk?si=-ExPzsaada9wNUh2" // جديد
+}
     },
 
     // ── خطط حاسبة BMI ──
