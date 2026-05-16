@@ -121,4 +121,5 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("tiktok1Link").href = hebaData.socialLinks.tiktok1;
     document.getElementById("tiktok2Link").href = hebaData.socialLinks.tiktok2;
     document.getElementById("emailLink").href = hebaData.socialLinks.email;
+    document.getElementById("youtubeLink").href = hebaData.socialLinks.youtube;
 });
