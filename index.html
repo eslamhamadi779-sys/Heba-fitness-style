@@ -1,31 +1,33 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صحتك بالدنيا ✨ | مع كابتن هبه</title>
+    
+    <title>heba essam |صحتك بالدنيا ✨ | مع كابتن هبه</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="موقع صحتك بالدنيا مع كابتن هبه عصام — أنظمة غذائية وتمارين ونصائح للصحة والرشاقة">
+    <meta name="keywords" content="كابتن هبه, تخسيس, رجيم, دايت, هبه عصام, heba fit, fitness, diet">
+    <meta name="author" content="Eslam Hashimi">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph عشان الشير على واتساب وفيسبوك -->
+    <meta property="og:title" content="صحتك بالدنيا | مع كابتن هبه عصام">
+    <meta property="og:description" content="هتخسي من غير ما تحسي 💖 برامج فيتنس ويوجا أونلاين">
+    <meta property="og:image" content="https://eslamhamadi779-sys.github.io/Heba-fitness-style/images/cover.jpg">
+    <meta property="og:url" content="https://eslamhamadi779-sys.github.io/Heba-fitness-style/">
+    <meta property="og:type" content="website">
+
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<meta name="description"
-content="موقع صحتك بالدنيا مع كابتن هبه عصام — أنظمة غذائية وتمارين ونصائح للصحة والرشاقة">
-
-<meta name="keywords"
-content="كابتن هبه, تخسيس, رجيم, دايت, هبه عصام , heba fit, heba fitnes, heba essam تمارين, صحة, fitness, diet">
-
-<meta name="author"
-content="Eslam Hashimi">
-
-<meta name="robots"
-content="index, follow">
 </head>
 <body>
- 
+
+
+
 <!-- خلفية -->
 <div class="cosmic-bg">
     <div class="stars-layer" id="starsLayer"></div>
@@ -117,17 +119,19 @@ content="index, follow">
         <div class="program-card" onclick="goToSection('fatBurnSection')">🔥<br>حرق دهون</div>
     </div>
 </section>
- 
-<!-- حاسبة الوزن -->
+
+     
+<!-- حاسبة الوزن - النسخة الصح -->
 <section>
    <div class="calculator">
     <h1>حاسبة الوزن المثالي 💪</h1>
-    <input type="number" id="weight" placeholder="اكتب وزنك بالكيلو">
-    <input type="number" id="height" placeholder="اكتب طولك بالسم">
-    <button id="calcBtn">احسب</button>
+    <input type="number" id="weight" placeholder="اكتب وزنك بالكيلو" min="20" max="300">
+    <input type="number" id="height" placeholder="اكتب طولك بالسم" min="100" max="250">
+    <button onclick="calculateBMI()">احسب</button>
     <div id="result"></div>
   </div>
 </section>
+
  
 <!-- سوشيال -->
 <section id="social" class="social-links">
