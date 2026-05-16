@@ -96,6 +96,8 @@ function calculateBMI() {
 document.addEventListener("DOMContentLoaded", function() {
     createStars();
     initWheelRotation();
+        initAnimations();
+
     
     // ملء النصوص من الداتا
     document.getElementById("dietText").innerText = hebaData.diet;
@@ -123,3 +125,16 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("emailLink").href = hebaData.socialLinks.email;
     document.getElementById("youtubeLink").href = hebaData.socialLinks.youtube;
 });
+
+
+unction initAnimations() {
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) e.target.classList.add('visible');
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+}
+
+
+
