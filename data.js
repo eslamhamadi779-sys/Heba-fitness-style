@@ -22,9 +22,8 @@ const hebaData = {
         tiktok2: "https://www.tiktok.com/@heba.fitness2",
         email: "mailto:Hebayoga7@gmail.com",
         youtube: "https://youtu.be/8jFUB-zoUWk?si=-ExPzsaada9wNUh2"
-    }, // ← فاصلة واحدة هنا وبس
+    },
 
-    // ── خطط حاسبة BMI ──
     gain: {
         diet: "نظام زيادة وزن: زود 500 سعرة عن احتياجك، ركز على البروتين والكارب الصحي زي الرز والمكرونة والبطاطا.",
         exercise: "تمارين مقاومة 4 أيام في الأسبوع، ركز على الأوزان التقيلة وتكرار 6-10 عدات.",
@@ -40,4 +39,4 @@ const hebaData = {
         exercise: "كارديو HIIT + مقاومة 4-5 أيام في الأسبوع.",
         tip: "اشرب ماية كتير، العطش بيخليك تفتكر نفسك جعان 💧"
     }
-} // ← قوس واحد في الآخر وبس
+};
