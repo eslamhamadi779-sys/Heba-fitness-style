@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-unction initAnimations() {
+function initAnimations() {
     const obs = new IntersectionObserver(entries => {
         entries.forEach(e => {
             if (e.isIntersecting) e.target.classList.add('visible');
